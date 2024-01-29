@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q4</title>
+    <link rel="stylesheet" href="../hw3.css">
+</head>
+<body>
+    <!-- same question. exactly same grammar. just different python questions -->
+    <div class="quizContainer">
+        <div class="scoreContainer">
+            <div>
+                <div>Question 4/4</div>
+                <div class="progress-bar">
+                    <span class="percent"></span>
+                </div>
+            </div>
+            <div class="q-score">
+                <div>Score:</div>
+                <div><span class="current-score">0</span></div>
+            </div>
+        </div>
+        <div id="firstQ" class="q1Page">
+            <h1>What keyword is used for function?</h1>
+            <div class="buttons">
+                <button id="qButtons" onclick="wrongAnswer(this, 'endQuiz.html')"><span>A.</span> func</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'endQuiz.html')"><span>B.</span> void</button>
+                <button id="qButtons" onclick="rightAnswer(this, 'endQuiz.html')"><span>C.</span> def</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'endQuiz.html')"><span>D.</span> aaa</button>
+            </div>
+        </div>
+        <div id="secondQ" class="q1Page">
+            <h1>What is output of print(8 // 3)?</h1>
+            <div class="buttons">
+                <button id="qButtons" onclick="wrongAnswer(this, 'endQuiz.html')"><span>A.</span> 10</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'endQuiz.html')"><span>B.</span> 30</button>
+                <button id="qButtons" onclick="rightAnswer(this, 'endQuiz.html')"><span>C.</span> 2</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'endQuiz.html')"><span>D.</span> 2.666</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../hw3.js"></script>
+    
+</body>
+</html>

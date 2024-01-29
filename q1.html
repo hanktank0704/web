@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title is quite important. I will get "q1", read number part of it. 
+    and use it to calculate progress -->
+    <title>q1</title>
+    <link rel="stylesheet" href="../hw3.css">
+</head>
+<body>
+    <!-- first question. there are two questions each page. 
+    use javascript to choose one randomly. -->
+    <!-- all of the question pages have same template. just different questions -->
+    <div class="quizContainer">
+        <div class="scoreContainer">
+            <div>
+                <div>Question 1/4</div>
+                <!-- progress bar is made in according to title. -->
+                <!-- q1 will have 1*25 progress, q3 will have 3*25 = 75 progress -->
+                <!-- this will be calculated by reading 1 from title q1 -->
+                <div class="progress-bar">
+                    <span class="percent"></span>
+                </div>
+            </div>
+            <!-- score will have individual variable that saves it. -->
+            <!-- javascript will calculate the scores -->
+            <div class="q-score">
+                <div>Score:</div>
+                <div><span class="current-score">0</span></div>
+                <!-- <div><span class="first-score">0</span></div> -->
+            </div>
+        </div>
+
+        <!-- question section. each buttons is connect with functions. If correct will increment score variable -->
+        <!-- buttons will change the page -->
+        <!-- javascript will choose random number 0 or 1
+        0 is first question, 1 is second question -->
+        <div id="firstQ" class="q1Page">
+            <h1>Which one is Not a legal variable name?</h1>
+            <div class="buttons">
+                <button id="qButtons" onclick="wrongAnswer(this, 'q2.html')"><span>A.</span> _myvar</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'q2.html')"><span>B.</span> Myvar</button>
+                <button id="qButtons" onclick="rightAnswer(this, 'q2.html')"><span>C.</span> my-var</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'q2.html')"><span>D.</span> my_var</button>
+            </div>
+        </div>
+        <div id="secondQ" class="q1Page">
+            <h1>What is a correct syntax to output "Hello World" in Python?</h1>
+            <div class="buttons">
+                <button id="qButtons" onclick="wrongAnswer(this, 'q2.html')"><span>A.</span> print("hello world");</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'q2.html')"><span>B.</span> hello world</button>
+                <button id="qButtons" onclick="rightAnswer(this, 'q2.html')"><span>C.</span> print("hello world")</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'q2.html')"><span>D.</span> echo hello world</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../hw3.js"></script>
+    
+</body>
+</html>

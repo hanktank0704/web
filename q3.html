@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q3</title>
+    <link rel="stylesheet" href="../hw3.css">
+</head>
+<body>
+    <!-- same question. exactly same grammar. just different python questions -->
+    <div class="quizContainer">
+        <div class="scoreContainer">
+            <div>
+                <div>Question 3/4</div>
+                <div class="progress-bar">
+                    <span class="percent"></span>
+                </div>
+                
+            </div>
+            <div class="q-score">
+                <div>Score:</div>
+                <div><span class="current-score">0</span></div>
+            </div>
+        </div>
+        <div id="firstQ" class="q1Page">
+            <h1>Which operator is used to multiply number in python?</h1>
+            <div class="buttons">
+                <button id="qButtons" onclick="wrongAnswer(this, 'q4.html')"><span>A.</span> +</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'q4.html')"><span>B.</span> -</button>
+                <button id="qButtons" onclick="rightAnswer(this, 'q4.html')"><span>C.</span> *</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'q4.html')"><span>D.</span> ++</button>
+            </div>
+        </div>
+        <div id="secondQ" class="q1Page">
+            <h1>What is not a data type in python?</h1>
+            <div class="buttons">
+                <button id="qButtons" onclick="wrongAnswer(this, 'q4.html')"><span>A.</span> int</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'q4.html')"><span>B.</span> char</button>
+                <button id="qButtons" onclick="rightAnswer(this, 'q4.html')"><span>C.</span> true_love_forever</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'q4.html')"><span>D.</span> float</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../hw3.js"></script>
+    
+</body>
+</html>
