@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="web_hw2.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- display set to flex. use space between to put SKKU logo and login button to 
+    start and end. -->
+    <div class="header">
+      <img src="assets/icon.png" alt="skku" width="300px" />
+      <button class="login">Login</button>
+    </div>
+
+    <!-- display set to flex. get rid of dots of the list -->
+    <div class="wrapper">
+      <ul class="side-menu">
+        <li>HOME</li>
+        <li>MENU</li>
+        <li>GALLERY</li>
+        <li>CONTACT</li>
+      </ul>
+
+      <!-- put rest of the web inside a content class. Since side menu takes all the column. -->
+      <div class="content">
+        <div class="welcome">
+          <img src="assets/bg_main.png" alt="start" style="width: 100%" />
+
+          <!-- put text inside different class. Set it to flex and put it in the middle of background -->
+          <div class="welcome_container" id="image-word">
+            <h2>Welcome to</h2>
+            <h2>SKKU RESTAURANT</h2>
+            <button>ORDER</button>
+          </div>
+        </div>
+
+        <!-- put welcome SKKU section inside "chef" class.
+        make different div and set it to flex. Make picture and text side by side. -->
+        <div class="chef">
+          <img src="assets/chef_img.png" alt="chef_cake" width="300px" />
+
+          <div>
+            <h2>Welcome to</h2>
+            <h2>SKKU RESTAURANT</h2>
+            <h4>
+              Over the next twelve months we will feature, successively, four
+              <br />
+              menus – or ‘volumes’ – each of which presents some of SKKU’s
+              <br />
+              unique dishes and the thinking behind them. By walking in SKKU’s
+              <br />
+              footsteps, you will discover for yourself the story of the
+              <br />
+              restaurant, with all its ground-breaking originality,
+              <br />
+              experimentation and innovation.
+            </h4>
+          </div>
+        </div>
+
+        <!-- special offer -->
+        <!-- put special offer section inside a diffenent div 
+        set background image by setting position relative.
+        use padding to set grey background for each menus.
+        use margin to get two menus apart. -->
+        <div class="special_offer">
+          <img src="assets/bg_offer.png" alt="bakc" width="100%" />
+
+          <div class="special_offer_container">
+            <h2>SPECIAL OFFERS</h2>
+            <ul>
+              <li class="menu-set">
+                <img
+                  src="assets/student_set_img.png"
+                  alt="first"
+                  width="250px"
+                />
+                <div class="menu-text">
+                  <h3>STUDENT SET</h3>
+                  <p>
+                    <del>&nbsp; 10,000₩&nbsp;&nbsp;</del>
+                  </p>
+                  <p>&nbsp;8,000₩</p>
+                </div>
+              </li>
+
+              <li class="menu-set">
+                <img src="assets/cheif_grill.png" alt="second" width="250px" />
+                <div class="menu-text">
+                  <h3>CHIEF GRILL</h3>
+                  <p>
+                    <del>15,000₩</del>
+                  </p>
+                  <p>10,000₩</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- special menu -->
+        <!-- put all three menus inside special-menu-container so I can controll all
+        menus in same settings. Do the same thing to menu texts. set display in
+        flex to put image and texts side by side. -->
+
+        <div class="special-menu">
+          <h2>SPECIAL MENU</h2>
+          <ul class="special-menu-container">
+            <li>
+              <img src="assets/beef_steak_img.png" alt="steak" width="200px" />
+              <div class="special-menu-text">
+                <h3>BEEF STEAK</h3>
+                <h3>Chef ' s menu</h3>
+                <br />
+                <h3>12,000 ₩</h3>
+              </div>
+            </li>
+
+            <li>
+              <img src="assets/exc_fish_img.png" alt="fish" width="200px" />
+              <div class="special-menu-text">
+                <h3>EXCLUSIVE FISH</h3>
+                <h3>Chef ' s menu</h3>
+                <br />
+                <h3>15,000 ₩</h3>
+              </div>
+            </li>
+
+            <li>
+              <img src="assets/fish_soup_img.png" alt="fish" width="200px" />
+              <div class="special-menu-text">
+                <h3>FISH SOUP</h3>
+                <h3>Chef ' s menu</h3>
+                <br />
+                <h3>10,000 ₩</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- contact -->
+        <!-- set label and input in individual sections to set the length and width equally. -->
+        <div class="contact">
+          <h1 style="color: white">CONTACT US</h1>
+          <form class="form" action="guest.html.html" method="get">
+            <div>
+              <label>Name:</label>
+              <input type="text" name="" value="" />
+            </div>
+            <div>
+              <label>Email:</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label class="label-message">Message:</label>
+              <textarea name="" id="" cols="20" rows="10"></textarea>
+            </div>
+            <div>
+              <button type="submit" name="button">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
