@@ -1,0 +1,41 @@
+.parent{
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+}
+.child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#image-word {
+    color: white;
+}
+
+.image-div{
+    /* margin: 0px 50px; */
+    /* display: inline; */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 150px;
+}
+
+.image-word2 {
+       width: 300px;
+    display: inline-block; font-size: 20px;
+    font-weight: bold;
+}
+
+.text{
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.start{
+    font-weight: bold;
+    font-size: 20px;
+}
