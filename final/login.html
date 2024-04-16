@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  
+  <div class="container-login">
+    <div class="wrap-login">
+      <form action="">
+        <div class="h2 text-center fw-bolder text-secondary-emphasis pb-3">Welcome</div>
+        <div class="d-flex justify-content-center pb-5">
+          <img src="img/logo_sample.svg" class="logo" alt="로고">
+        </div>
+        <!-- ID 입력 -->
+        <div class="form-floating">
+          <input type="email" class="form-control" id="login-id" placeholder="name@example.com" required>
+          <label for="login-id">Email address</label>
+        </div>
+        <!-- PW 입력 -->
+        <div class="form-floating">
+          <input type="password" class="form-control" id="login-pw" placeholder="Password" required>
+          <label for="login-pw">Password</label>
+        </div>
+        <!-- 전송 버튼 -->
+        <div class="login-form-submit">
+          <div class="login-form-btn">
+            <div class="login-form-bgbtn"></div>
+            <button type="submit">LOGIN</button>
+          </div>
+        </div>
+      </form>
+      <!-- Sign up 링크 -->
+      <div class="no-account">
+        <span class="txt1">Don’t have an account?</span>
+        <a href="#" class="txt2">Sign up</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
