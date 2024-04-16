@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hw4.css">
+</head>
+<body>
+    <!-- 4 different pages. login, login succes, sign, sign success pages.
+    will hide the pages that aren't used -->
+    <div id="loginPage">
+        <div class="main">
+
+            <!-- two buttons for changing what to do -->
+            <div class="choice-button">
+                <button id="login-button1" onclick="changePage(0)">login</button>
+                <button id="sign-button1" onclick="changePage(1)">sign up</button>
+            </div>
+
+            <!-- where I get my inputs -->
+            <!-- error messages are hidden. If criteria are met, error messages will be revealed.
+            used absolute to place them beyond the form. -->
+            <form class="forms" id="login-form">
+                <h1>Login</h1>
+                <h3 id="enter-email">Enter user name and password:</h3>
+
+                <!-- error message for login page -->
+                <h3 id="wrong-email">Credentials do no match!</h3>
+
+                <h3>Email</h3>
+                    <div class="input-wrapper">
+                        <input id="login-email" type="text">
+                        <!-- <span id="login-error-email" class="input-error">your email is invalid!</span> -->
+                        <span id="login-error-email-invalid" class="login-input-error">email is invalid!</span>
+
+                        <!-- 11-20 -->
+                        <!-- green checkmarks repeated in every input box -->
+                        <span class="checkmark" id="login-email-checkmark"></span>
+                    </div>
+
+                <h3>password</h3>
+                    <div class="input-wrapper">
+                        <input id="login-password" type="password">
+                        <!-- <span id="login-error-password" class="input-error">please enter your password!</span> -->
+                        <span id="login-error-password-invalid" class="login-input-error">enter your password!</span>
+
+                        <!-- 11-20 -->
+                        <span class="checkmark" id="login-password-checkmark"></span>
+                    </div>
+
+                <div class="sign-up">
+                    <input type="submit" value="login">
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- similar to login page. just more inputs
+    error messages hidden. some questions have multiple error messages.
+    javascript will check if the criteria are met -->
+    <div id="signPage">
+        <div class="main">
+            <div class="choice-button">
+                <button id="login-button2" onclick="changePage(0)">login</button>
+                <button id="sign-button2" onclick="changePage(1)">sign up</button>
+            </div>
+            <form class="forms" id="sign-form">
+                <h1>sign up</h1>
+                <h3>Fill in the form:</h3>
+
+                <h3>First name</h3>
+                <div class="input-wrapper">
+                    <input id="sign-first-name" type="text">
+                    <span id="error-first-name" class="input-error">please enter your first name!</span>
+                    <span id="error-first-name-number" class="input-error">wrong name format!</span>
+
+                    <!-- 11-20 -->
+                    <span class="checkmark" id="first-name-checkmark"></span>
+                </div>
+
+                <h3>last name</h3>
+                <div class="input-wrapper">
+                    <input id="sign-last-name" type="text">
+                    <span id="error-last-name" class="input-error">please enter your last name!</span>
+                    <span id="error-last-name-number" class="input-error">wrong name format!</span>
+
+                    <!-- 11-20 -->
+                    <span class="checkmark" id="last-name-checkmark"></span>
+                </div>
+
+                <div class="radio-wrapper input-wrapper">
+                    <input type="radio" name="radio-input" value="male" style="width: 30px;"> 
+                    <span>male</span>
+                    <input type="radio" name="radio-input" value="female" style="width: 30px;"> 
+                    <span>female</span>
+                    <span id="error-radio" class="input-error">please enter your gender!</span>
+
+                    <!-- 11-20 -->
+                    <span class="checkmark" id="gender-checkmark"></span>
+
+                </div>
+                
+                <h3>email</h3>
+                <div class="input-wrapper">
+                    <input id="sign-email" type="text">
+                    <span id="error-email" class="input-error">please enter your email!</span>
+                    <span id="error-email-invalid" class="input-error">email is invalid!</span>
+
+                    <!-- 11-20 -->
+                    <span class="checkmark" id="email-checkmark"></span>
+                </div>
+
+                <h3>Password</h3>
+                <div class="input-wrapper">
+                    <input id="sign-password" type="password">
+                    <span id="error-password" class="input-error">please enter your password!</span>
+                    <span id="error-password-invalid" class="input-error">wrong password format!</span>
+
+                    <!-- 11-20 -->
+                    <span class="checkmark" id="password-checkmark"></span>
+                </div>
+
+                <h3>Confirm password</h3>
+                <div class="input-wrapper">
+                    <input id="sign-confirm-password" type="password">
+                    <span id="error-confirm-password" class="input-error">please re-enter your password!</span>
+                    <span id="error-confirm-password-invalid" class="input-error">password is different!</span>
+
+                    <!-- 11-20 -->
+                    <span class="checkmark" id="confirm-password-checkmark"></span>
+                </div>
+
+                <!-- in sign up page, when submit button is pressed, js will check if all the criterias are met.
+                if not will not go to the next page. -->
+                <div class="sign-up">
+                    <input type="submit" value="sign up">
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- simple page. just shows that login succeed. -->
+    <div id="loginSuccess">
+        <div class="main">
+            <div class="choice-button">
+                <button onclick="changePage(0)">login</button>
+                <button onclick="changePage(1)">sign up</button>
+            </div>
+            <h1>login success</h1>
+        </div>
+
+    </div>
+
+    <!-- simple page. just show that sign up succeed -->
+    <div id="signSuccess">
+        <div class="main">
+            <div class="choice-button">
+                <button onclick="changePage(0)">login</button>
+                <button onclick="changePage(1)">sign up</button>
+            </div>
+            <h1>sign up success</h1>
+        </div>
+
+    </div>
+
+    
+    <script src="hw4.js"></script>
+</body>
+</html>
