@@ -1,0 +1,261 @@
+:root {
+  --main-bg-color: #3e3e3e;
+  --main-text-color: #efefef;
+}
+
+/* put repeating colors in variable */
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: Arial;
+  margin: 0px;
+}
+
+/* change settings of texts. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+/* set the buttons setting to match the example given. */
+button {
+  background-color: transparent;
+  border: 0px;
+  color: var(--main-text-color);
+}
+
+.header {
+  display: flex;
+  /* background-color: var(--main-bg-color); */
+  /* background-color:  */
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px 64px;
+}
+.login {
+  font-size: 24px;
+  font-weight: bold;
+}
+.wrapper {
+  display: flex;
+}
+
+.side-menu {
+  /* background-color: pink; */
+  /* display: flex; */
+
+  min-width: 250px;
+  width: 250px;
+  list-style: none;
+  padding-top: 48px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+
+  padding-left: 0px;
+}
+
+/* set margin of side menu texts to take them apart */
+/* texts are in li */
+.side-menu li {
+  margin-top: 48px;
+}
+
+.content {
+  /* background-color: green; */
+  grid-column: 2/ -1;
+}
+.welcome {
+  /* position: relative; */
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  margin-bottom: -10px;
+}
+
+/* texts put in the middle of the backgroud. set position in absolute */
+.welcome_container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+.welcome_container button {
+  font-size: 42px;
+  font-weight: bold;
+  border: 4px solid var(--main-text-color);
+  border-radius: 12px;
+  padding: 16px 48px;
+  margin-top: 80px;
+}
+
+/* weclome skku section */
+.chef {
+  display: flex;
+  background: white;
+  justify-content: center;
+  color: black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.chef div {
+  margin-left: 48px;
+}
+.chef div h2 {
+  font-size: 48px;
+  font-style: italic;
+}
+.chef div h4 {
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+/* special offer section
+set position to absolute like welcome skku section
+to put menus in the middle of background */
+
+.special_offer {
+  /* background-image: url("assets/bg_offer.png");
+  background-size: cover;
+  display: flex; */
+  position: relative;
+  margin-bottom: -10px;
+}
+.special_offer_container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding-top: 40px;
+  /* background-color: pink; */
+}
+.special_offer_container h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+.special_offer_container ul {
+  display: flex;
+  gap: 80px;
+}
+
+.menu-set {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  background: lightgrey;
+  padding: 48px;
+  padding-bottom: 60px;
+}
+.menu-text {
+  width: 288px;
+  margin-left: 40px;
+  color: black;
+  display: text;
+  font-size: 32px;
+  justify-content: space-between;
+}
+.menu-text h3 {
+  font-size: italic;
+}
+.menu-text p {
+  color: green;
+  font-weight: bold;
+}
+.menu-text p del {
+  color: red;
+}
+.special-menu {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+.special-menu h2 {
+  color: var(--main-bg-color);
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 40px 0;
+}
+.special-menu-container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 120px;
+}
+.special-menu-container li {
+  display: flex;
+  justify-content: center;
+  color: var(--main-bg-color);
+}
+.special-menu-text {
+  color: black;
+  margin-left: 20px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.special-menu-text h3:first-child {
+  margin-top: 10px;
+}
+.contact {
+  /* background-color: grey; */
+  padding: 80px 0;
+}
+.contact h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.contact form {
+  margin-top: 80px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-items: end;
+}
+.contact form div {
+  font-size: 24px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: end;
+}
+.contact form div label {
+  width: 120px;
+}
+.contact form div input {
+  width: 500px;
+  height: 40px;
+}
+.contact form div textarea {
+  width: 500px;
+  height: 160px;
+  resize: none;
+}
+.contact form div button {
+  color: var(--main-bg-color);
+  background-color: var(--main-text-color);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 36px;
+  border-radius: 12px;
+}
+.label-message {
+  align-self: start;
+}
