@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q2</title>
+    <link rel="stylesheet" href="../hw3.css">
+</head>
+<body>
+    <!-- same question. exactly same grammar. just different python questions -->
+    <div class="quizContainer">
+        <div class="scoreContainer">
+            <div>
+                <div>Question 2/4</div>
+                <div class="progress-bar">
+                    <span class="percent"></span>
+                </div>
+            </div>
+            <div class="q-score">
+                <div>Score:</div>
+                <div><span class="current-score">0</span></div>
+            </div>
+        </div>
+        <div id="firstQ" class="q1Page">
+            <h1>How do you insert comments in python code?</h1>
+            <div class="buttons">
+                <button id="qButtons" onclick="wrongAnswer(this, 'q3.html')"><span>A.</span> //</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'q3.html')"><span>B.</span> /**/</button>
+                <button id="qButtons" onclick="rightAnswer(this, 'q3.html')"><span>C.</span> #</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'q3.html')"><span>D.</span> !!></button>
+            </div>
+        </div>
+        <div id="secondQ" class="q1Page">
+            <h1>How do you create a variable with floating number 1.1?</h1>
+            <div class="buttons">
+                <button id="qButtons" onclick="wrongAnswer(this, 'q3.html')"><span>A.</span> float = 1.1</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'q3.html')"><span>B.</span> x is 1.1</button>
+                <button id="qButtons" onclick="rightAnswer(this, 'q3.html')"><span>C.</span> x = 1.1</button>
+                <button id="qButtons" onclick="wrongAnswer(this, 'q3.html')"><span>D.</span> 1.1 = x</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../hw3.js"></script>
+    
+</body>
+</html>
